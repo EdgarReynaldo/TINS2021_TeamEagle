@@ -81,6 +81,12 @@
 		</Linker>
 		<Unit filename="Hexagoner.cpp" />
 		<Unit filename="README.txt" />
+		<Unit filename="include/Hexagon.hpp" />
+		<Unit filename="include/Hexagon3D.hpp" />
+		<Unit filename="include/PRNG.hpp" />
+		<Unit filename="src/Hexagon.cpp" />
+		<Unit filename="src/Hexagon3D.cpp" />
+		<Unit filename="src/PRNG.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
