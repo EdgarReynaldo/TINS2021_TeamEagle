@@ -7,7 +7,7 @@
 #include "allegro5/allegro.h"
 
 
-
+#include "Hexagon3D.hpp"
 
 
 int main(int argc , char** argv) {
