@@ -81,12 +81,20 @@
 		</Linker>
 		<Unit filename="Hexagoner.cpp" />
 		<Unit filename="README.txt" />
+		<Unit filename="include/Camera.hpp" />
 		<Unit filename="include/Hexagon.hpp" />
 		<Unit filename="include/Hexagon3D.hpp" />
+		<Unit filename="include/Orient.hpp" />
 		<Unit filename="include/PRNG.hpp" />
+		<Unit filename="include/SpatialInfo.hpp" />
+		<Unit filename="include/Vec3.hpp" />
+		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/Hexagon.cpp" />
 		<Unit filename="src/Hexagon3D.cpp" />
+		<Unit filename="src/Orient.cpp" />
 		<Unit filename="src/PRNG.cpp" />
+		<Unit filename="src/SpatialInfo.cpp" />
+		<Unit filename="src/Vec3.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
