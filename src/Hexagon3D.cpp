@@ -57,10 +57,10 @@ void Hexagon3D::BuildHexagon(double iradius , double oradius , double zdepth) {
    }
    for (unsigned int vertex = 0 ; vertex < 6 ; ++vertex) {
       for (unsigned int side = 0 ; side < 4 ; ++side) {
-         faces[side*24 + vertex*4 + 0] = verts[4*((vertex + 0)%6) + ((side + 0)%4];
-         faces[side*24 + vertex*4 + 1] = verts[4*((vertex + 0)%6) + ((side + 1)%4];
-         faces[side*24 + vertex*4 + 2] = verts[4*((vertex + 1)%6) + ((side + 1)%4];
-         faces[side*24 + vertex*4 + 3] = verts[4*((vertex + 1)%6) + ((side + 0)%4];
+         faces[side*24 + vertex*4 + 0] = verts[4*((vertex + 0)%6) + (side + 0)%4];
+         faces[side*24 + vertex*4 + 1] = verts[4*((vertex + 0)%6) + (side + 1)%4];
+         faces[side*24 + vertex*4 + 2] = verts[4*((vertex + 1)%6) + (side + 1)%4];
+         faces[side*24 + vertex*4 + 3] = verts[4*((vertex + 1)%6) + (side + 0)%4];
       }
    }
 }
@@ -70,7 +70,7 @@ void Hexagon3D::BuildHexagon(double iradius , double oradius , double zdepth) {
 void Hexagon3D::DrawHexagon() {
    for (unsigned int vertex = 0 ; vertex < 6 ; ++vertex) {
       for (unsigned int side = 0 ; side < 4 ; ++side) {
-         al_draw_prim(faces[side*24 + vertex*4 + 0] , 0 , 0 , 4 , ALLLEGRO_PRIM_TRIANGLE_FAN);
+         al_draw_prim(&faces[side*24 + vertex*4 + 0] , 0 , 0 , 0 , 4 , ALLEGRO_PRIM_TRIANGLE_FAN);
       }
    }
 }

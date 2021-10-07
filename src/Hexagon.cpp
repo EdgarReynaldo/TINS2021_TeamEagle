@@ -3,7 +3,6 @@
 
 
 #include "Hexagon.hpp"
-#include "Player.hpp"
 
 
 #include <string>
@@ -17,6 +16,10 @@
 #include "Eagle/backends/Allegro5Backend.hpp"
 #include "allegro5/allegro.h"
 #include "allegro5/allegro_primitives.h"
+
+#include "Player.hpp"
+#include "Territory.hpp"
+
 
 
 /// ---------------------------     Hexagon      -----------------------------

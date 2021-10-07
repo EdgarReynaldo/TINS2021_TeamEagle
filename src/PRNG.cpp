@@ -5,7 +5,7 @@
 #include "PRNG.hpp"
 #include "Eagle/Exception.hpp"
 
-#include "Math.hpp"
+#include "Eagle/Math.hpp"
 
 MTRNG PRNG;
 

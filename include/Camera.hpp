@@ -33,7 +33,7 @@ public :
    void SetAspect(double a) {aspect = a;}
    
    void Setup3D(bool orthographic);
-   static void Setup2D();
+   static void Setup2D(int dw , int dh);
    
    const SpatialInfo& Info() {return info;}
    

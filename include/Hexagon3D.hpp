@@ -5,6 +5,11 @@
 #ifndef Hexagon3D_HPP
 #define Hexagon3D_HPP
 
+
+#include "Hexagon.hpp"
+
+
+
 class Hexagon3D {
    Hexagon proto;
    double inner;

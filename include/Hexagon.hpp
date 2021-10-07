@@ -15,6 +15,8 @@
 #include "allegro5/allegro_primitives.h"
 
 
+#include <string>
+
 class EagleGraphicsContext;
 
 enum HEXCORNER {
