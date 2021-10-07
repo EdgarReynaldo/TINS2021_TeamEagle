@@ -16,9 +16,10 @@
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
-					<Add option="-lEagleA5SharedDebug.dll" />
-					<Add option="-lEagleSharedDebug.dll" />
+					<Add option="-lEagleA5Debug.dll" />
+					<Add option="-lEagleDebug.dll" />
 					<Add option="-lallegro_monolith-debug.dll" />
+					<Add option="-ldwmapi" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -31,9 +32,10 @@
 					<Add option="-O2" />
 				</Compiler>
 				<Linker>
-					<Add option="-lEagleA5SharedDebug.dll" />
-					<Add option="-lEagleShared.dll" />
+					<Add option="-lEagleA5.dll" />
+					<Add option="-lEagle.dll" />
 					<Add option="-lallegro_monolith-debug.dll" />
+					<Add option="-ldwmapi" />
 					<Add option="-s" />
 				</Linker>
 			</Target>
@@ -47,9 +49,43 @@
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
-					<Add option="-lEagleA5SharedDebug.dll" />
-					<Add option="-lEagleSharedDebug.dll" />
-					<Add option="-lallegro_monolith-debug.dll" />
+					<Add option="-lEagleA5Debug" />
+					<Add option="-lEagleDebug" />
+					<Add option="-lallegro_monolith-debug-static" />
+					<Add option="-static" />
+					<Add option="-lOpenAL32" />
+					<Add option="-ljpeg" />
+					<Add option="-ldumb" />
+					<Add option="-lwebp" />
+					<Add option="-lFLAC" />
+					<Add option="-ltheora" />
+					<Add option="-lvorbisfile" />
+					<Add option="-lvorbis" />
+					<Add option="-logg" />
+					<Add option="-lphysfs" />
+					<Add option="-lfreetype" />
+					<Add option="-lpng16" />
+					<Add option="-lzlibstatic" />
+					<Add option="-ldsound" />
+					<Add option="-lgdiplus" />
+					<Add option="-luuid" />
+					<Add option="-lkernel32" />
+					<Add option="-lwinmm" />
+					<Add option="-lpsapi" />
+					<Add option="-lopengl32" />
+					<Add option="-lglu32" />
+					<Add option="-luser32" />
+					<Add option="-lcomdlg32" />
+					<Add option="-lgdi32" />
+					<Add option="-lshell32" />
+					<Add option="-lole32" />
+					<Add option="-ladvapi32" />
+					<Add option="-lws2_32" />
+					<Add option="-lshlwapi" />
+					<Add option="-lpthread" />
+					<Add option="-ldwmapi" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
 				</Linker>
 			</Target>
 			<Target title="ReleaseStatic">
@@ -62,9 +98,43 @@
 					<Add option="-O2" />
 				</Compiler>
 				<Linker>
-					<Add option="-lEagleA5SharedDebug.dll" />
-					<Add option="-lEagleShared.dll" />
-					<Add option="-lallegro_monolith-debug.dll" />
+					<Add option="-lEagleA5" />
+					<Add option="-lEagle" />
+					<Add option="-lallegro_monolith-static" />
+					<Add option="-static" />
+					<Add option="-lOpenAL32" />
+					<Add option="-ljpeg" />
+					<Add option="-ldumb" />
+					<Add option="-lwebp" />
+					<Add option="-lFLAC" />
+					<Add option="-ltheora" />
+					<Add option="-lvorbisfile" />
+					<Add option="-lvorbis" />
+					<Add option="-logg" />
+					<Add option="-lphysfs" />
+					<Add option="-lfreetype" />
+					<Add option="-lpng16" />
+					<Add option="-lzlibstatic" />
+					<Add option="-ldsound" />
+					<Add option="-lgdiplus" />
+					<Add option="-luuid" />
+					<Add option="-lkernel32" />
+					<Add option="-lwinmm" />
+					<Add option="-lpsapi" />
+					<Add option="-lopengl32" />
+					<Add option="-lglu32" />
+					<Add option="-luser32" />
+					<Add option="-lcomdlg32" />
+					<Add option="-lgdi32" />
+					<Add option="-lshell32" />
+					<Add option="-lole32" />
+					<Add option="-ladvapi32" />
+					<Add option="-lws2_32" />
+					<Add option="-lshlwapi" />
+					<Add option="-lpthread" />
+					<Add option="-ldwmapi" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
 					<Add option="-s" />
 				</Linker>
 			</Target>
@@ -73,27 +143,31 @@
 			<Add option="-Wall" />
 			<Add directory="./include" />
 			<Add directory="e:/usr64/include" />
-			<Add directory="c:/mingw64/include" />
 		</Compiler>
 		<Linker>
 			<Add directory="e:/usr64/lib" />
-			<Add directory="c:/mingw64/lib" />
 		</Linker>
 		<Unit filename="Hexagoner.cpp" />
 		<Unit filename="README.txt" />
 		<Unit filename="include/Camera.hpp" />
 		<Unit filename="include/Hexagon.hpp" />
 		<Unit filename="include/Hexagon3D.hpp" />
+		<Unit filename="include/Lighting.hpp" />
 		<Unit filename="include/Orient.hpp" />
 		<Unit filename="include/PRNG.hpp" />
+		<Unit filename="include/Player.hpp" />
 		<Unit filename="include/SpatialInfo.hpp" />
+		<Unit filename="include/Territory.hpp" />
 		<Unit filename="include/Vec3.hpp" />
 		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/Hexagon.cpp" />
 		<Unit filename="src/Hexagon3D.cpp" />
+		<Unit filename="src/Lighting.cpp" />
 		<Unit filename="src/Orient.cpp" />
 		<Unit filename="src/PRNG.cpp" />
+		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/SpatialInfo.cpp" />
+		<Unit filename="src/Territory.cpp" />
 		<Unit filename="src/Vec3.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
